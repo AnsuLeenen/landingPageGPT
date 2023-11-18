@@ -1,0 +1,249 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1C1C1C; /* Dark Gray */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    background: linear-gradient(to right, #333, #555); /* Gradient from Dark Gray to Dark Grayish Blue */
+    color: white;
+    padding: 15px 0;
+    position: relative;
+    display: flex;
+}
+
+nav img {
+    max-height: 40px; /* Adjust the max-height as needed */
+    margin-right: 10px; /* Add margin to separate the logo from the company name */
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #4C8BF5; /* Blue on hover */
+}
+
+.burger-menu {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.hero {
+    background: linear-gradient(to right, #4A4A4A, #665CA6); /* Gradient from Dark Gray to Purple */
+    color: white;
+    text-align: center;
+    padding: 100px 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.hero-content {
+    max-width: 50%;
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.hero img {
+    max-width: 60%;
+    border-radius: 50px; /* Adjust the border-radius to control the level of rounding */
+    object-fit: cover; /* Ensure the image covers its container while maintaining aspect ratio */
+    mix-blend-mode: multiply; /* Apply a blending effect - adjust as needed */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #4C8BF5; /* Blue */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.features {
+    background: linear-gradient(to right, #525252, #1F4E79); /* Gradient from Gray to Dark Blue */
+    padding: 100px 0;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center;
+    text-align: center;
+}
+
+.feature-item {
+    max-width: 45%; /* Adjust the max-width as needed */
+    text-align: left; /* Align text to the left */
+}
+
+.features img {
+    max-width: 50%;
+    border-radius: 50px; /* Adjust the border-radius to control the level of rounding */
+    object-fit: cover; /* Ensure the image covers its container while maintaining aspect ratio */
+    mix-blend-mode: multiply; /* Apply a blending effect - adjust as needed */
+}   
+
+.examples {
+    background: linear-gradient(to right, #757575, #1F4E79); /* Gradient from Dark Gray to Dark Blue */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.examples img {
+    max-width: 50%;
+    border-radius: 50px; /* Adjust the border-radius to control the level of rounding */
+    object-fit: cover; /* Ensure the image covers its container while maintaining aspect ratio */
+    mix-blend-mode: multiply; /* Apply a blending effect - adjust as needed */
+}
+
+.examples p {
+    color: #4C8BF5; /* Blue */
+}
+
+.reviews {
+    background: linear-gradient(to right, #8A8A8A, #4C8BF5); /* Gradient from Medium Gray to Blue */
+    padding: 80px 0;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.review-avatar img {
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    mix-blend-mode: multiply;
+}
+
+.review-content h3 {
+    margin-bottom: 10px;
+}
+
+.reviews img {
+    max-width: 50%;
+    border-radius: 50px; /* Adjust the border-radius to control the level of rounding */
+    object-fit: cover; /* Ensure the image covers its container while maintaining aspect ratio */
+    mix-blend-mode: multiply; /* Apply a blending effect - adjust as needed */
+}
+
+.contact {
+    background: linear-gradient(to right, #6D6D6D, #525252); /* Gradient from Gray to Dark Gray */
+    padding: 100px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Enhanced form aesthetics with more colored elements */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #666; /* Dark Gray */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #333; /* Dark Gray */
+    color: white;
+}
+
+form button {
+    background: linear-gradient(to right, #4C8BF5, #3561A1); /* Gradient from Blue to Dark Blue */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background: linear-gradient(to right, #1F4E79, #4C8BF5); /* Gradient from Dark Blue to Blue */
+}
+
+/* Media Query for Responsive Navigation */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #265D8C; /* Dark Blue */
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Black Fox Media</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <img src="./images/9652553_fox_origami_paper_craft_creative_icon.png" alt="Black Fox Media">
+            <h1>Black Fox Media</h1>
+            <div class="burger-menu">&#9776;</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Black Fox Media <i class="fas fa-globe"></i></h2>
+            <p>For all your digital hopes and dreams.</p>
+            <img src="./images/charlesdeluvio-Lks7vei-eAg-unsplash.jpg" alt="Professional Image">
+            <a href="#contact" class="cta-button">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Animated Designs Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Our Awesome Features <i class="fas fa-star"></i></h2>
+            <img src="./images/daniel-fazio-DzqeB43HfnE-unsplash.jpg" alt="Professional Image">
+            <div class="feature-item">
+                <i class="fas fa-desktop"></i>
+                <h3>Responsive Design</h3>
+                <p>Build websites that look great on any device with our responsive design solutions.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-cogs"></i>
+                <h3>Advanced Frameworks</h3>
+                <p>Utilize powerful frameworks like React and Vue.js to create dynamic and interactive web applications.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-puzzle-piece"></i>
+                <h3>Seamless Integration</h3>
+                <p>Integrate seamlessly with third-party APIs and services for enhanced functionality.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples Section -->
+    <section id="examples" class="examples">
+        <div class="container">
+            <h2>Examples <i class="fas fa-code"></i></h2>
+            <p>Check out some examples of our work.</p>
+            <img src="./images/kevin-matos-Nl_FMFpXo2g-unsplash.jpg" alt="Professional Image">
+            <!-- Add example content here -->
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>What Our Clients Say <i class="fas fa-comments"></i></h2>
+            <div class="review-item">
+                <div class="review-avatar">
+                    <img src="./images/mysterious-gangster-character/3594138.jpg" alt="Client Avatar 1">
+                </div>
+                <div class="review-content">
+                    <h3>Client Name 1</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec ..."</p>
+                </div>
+            </div>
+            <!-- Add more review items as needed -->
+            <div class="review-item">
+                <div class="review-avatar">
+                    <img src="./images/mysterious-gangster-character/3594138.jpg" alt="Client Avatar 2">
+                </div>
+                <div class="review-content">
+                    <h3>Client Name 2</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec ..."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us <i class="fas fa-envelope"></i></h2>
+            <p>Have questions or need assistance? Reach out to our support team.</p>
+            <form>
+                <label for="name">Your Name <i class="fas fa-user"></i>:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email <i class="fas fa-envelope"></i>:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message <i class="fas fa-comment"></i>:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="cta-button">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- JavaScript for Responsive Navigation and Animations -->
+    <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
